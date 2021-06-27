@@ -6,15 +6,36 @@
 int main()
 {
     std::cout << "Hello World!\n";
+
+
+    // Variables, Literals and Constants
+    // https://www.programiz.com/cpp-programming/variables-literals
+
+    int age = 12; // age is 14
+    age = 19;     // age is now 19
+
+    // Rules for naming a variable:
+    //   - A variable name can only have alphabets, numbers, and the underscore '_'.
+    //   - A variable name cannot begin with a number.
+    //   - Variable names should not begin with an uppercase character.
+    //   - A variable name cannot be a keyword. For example, 'int' is a keyword that is used to denote integers.
+    //   - A variable name can start with an underscore. However, it's not considered a good practice.
+    //   - We should try to give meaningful names to variables. For example, 'first_name' is a better variable name than 'fn'.
+
+    double precise_age = 12.98; // data type, variable, assignment, floating-point literal
+
+    // Literals:
+    //   - Integers:
+    //       - decimal (base 10)
+    //       - octal (base 8)
+    //       - hexadecimal (base 16)
+    //   - Floating-point Literals
+    //       - fractional form (.)
+    //       - exponent form (E)
+    //   - Characters (')
+    //   - Escape Sequences (\)
+    //   - String Literals (")
+
+    const int LIGHT_SPEED = 299792458;
+    // LIGHT_SPEED = 2500; // Complier error: "you cannot assign to a variable that is const"
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
