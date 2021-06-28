@@ -1,5 +1,4 @@
 ﻿// Introduction.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 
@@ -52,7 +51,7 @@ int main()
     //  char        Character               1
     //  wchar_t     Wide Character          2
     //  bool        Boolean                 1
-    // void         Empty                   0
+    //  void        Empty                   0
 
     int salary = 75000; // int can store values from -2147483648 to 2147483647
 
@@ -70,6 +69,7 @@ int main()
 
     // Modified Data Types:
     //  Data Type           Size(in Bytes)  Meaning
+    //  ---------------------------------------------------------------------------------------------------------------------
     //  signed int          4               used for integers (equivalent to int)
     //  unsigned int        4               can only store positive integers
     //  short               2               used for small integers (range -32768 to 32767)
