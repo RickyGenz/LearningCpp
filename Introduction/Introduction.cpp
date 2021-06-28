@@ -90,4 +90,35 @@ int main()
 
     // Derived Data Types are derived from fundamental data types.
     // Some examples are arrays, pointers, function types, and structures.
+
+
+    // Basic Input/Output (IO)
+    // https://www.programiz.com/cpp-programming/input-output
+
+    // prints the string enclosed in double quotes
+    std::cout << "This is C++ Programming" << std::endl;
+
+    int num1 = 70;
+    double num2 = 256.783;
+    char ch = 'A';
+
+    std::cout << num1 << std::endl; // print integer
+    std::cout << num2 << std::endl; // print double
+    std::cout << "character: " << ch << std::endl; // print char
+
+    int num;
+    std::cout << "Enter an integer: ";
+    std::cin >> num; // taking input
+    std::cout << "The number is: " << num << std:: endl;
+
+    char in_a;
+    int in_num;
+    std::cout << "Enter a character and an integer: ";
+    std::cin >> in_a >> in_num;
+    std::cout << "Character: " << in_a << std::endl;
+    std::cout << "Number: " << in_num << std::endl;
+
+    
+    // the "exit status" of the main() function. The program ends with this statement, however, this statement is not mandatory.
+    return 0;
 }
