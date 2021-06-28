@@ -117,8 +117,49 @@ int main()
     std::cin >> in_a >> in_num;
     std::cout << "Character: " << in_a << std::endl;
     std::cout << "Number: " << in_num << std::endl;
+    
+
+    // Type Conversion
+    // https://www.programiz.com/cpp-programming/type-conversion
+
+    // Implicit Type Conversion or automatic conversion is done automatically by the compiler
+    int num_int = 9; // assigning an int value to num_int
+    double num_double; // declaring a double type variable
+    num_double = num_int; // implicit conversion by assigning int value to a double variable
+    std::cout << "num_int = " << num_int << std::endl;
+    std::cout << "num_double = " << num_double << std::endl;
+
+    int num_int_2; // declaring an int type variable
+    double num_double_2 = 7.77; // assigning a double value to num_double_2
+    num_int_2 = num_double_2; // implicit conversion by assigning a double value to an int variable
+    std::cout << "num_int_2 = " << num_int_2 << std::endl; // since int cannot have a decimal part, the digits after the decimal point are truncated
+    std::cout << "num_double_2 = " << num_double_2 << std::endl;
+
+    // Explicit Type Conversion or type casting is when we manually change data from one type to another
+    //   - C-style type casting (also known as cast notation) | (data_type)expression;
+    //   - Function notation (also known as old C++ style type casting) | data_type(expression);
+    //   - Type conversion operators | static_cast, dynamic_cast, const_cast, reinterpret_cast
+
+    int num_int_3 = 26; // initializing int variable
+    double num_double_3; // declaring double variable
+    num_double_3 = (double)num_int_3; // explicitly converting from int to double using cast notation
+    std::cout << "num_int_3 = " << num_int_3 << std::endl;
+    std::cout << "num_double_3 = " << num_double_3 << std::endl;
+
+    int num_int_4 = 43;
+    double num_double_4;
+    num_double_4 = double(num_int_4); // explicitly converting from int to double using function notation
+    std::cout << "num_int_4 = " << num_int_4 << std::endl;
+    std::cout << "num_double_4 = " << num_double_4 << std::endl;
+
+    double num_double_5 = 3.56;
+    std::cout << "num_double_5 = " << num_double_5 << std::endl;
+    int num_int_5 = (int)num_double_5; // C-style conversion from double to int
+    std::cout << "num_int_5 = " << num_int_5 << std::endl;    
+    int num_int_6 = int(num_double_5); // function-style conversion from double to int
+    std::cout << "num_int_6 = " << num_int_6 << std::endl;
 
     
-    // the "exit status" of the main() function. The program ends with this statement, however, this statement is not mandatory.
+    // The "exit status" of the main() function. The program ends with this statement; however, this statement is not mandatory.
     return 0;
 }
