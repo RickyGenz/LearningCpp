@@ -242,6 +242,25 @@ int main()
     //  >>          Binary Shift Right
 
 
+    // Comments
+    // https://www.programiz.com/cpp-programming/comments
+
+    // There are two ways to add comments to code:
+    //  // for Single Line Comments
+    //  /* */ for Multi-line Comments
+    // Comments are completely ignored by the compiler (which can be a valuable debugging tool).
+
+    /*
+        Writing comments within the code makes it easier to understand the code in the future.
+        Not only for ourselves, but also for our fellow developers.
+
+        Comments should not be the substitute for a way to explain poorly written code.
+        We should always write well-structured and self-explanatory code and then use comments.
+
+        As a general rule of thumb, use comments to explain 'Why' you did something rather than 'How' you did something.
+    */
+
+
     // The "exit status" of the main() function. The program ends with this statement; however, this statement is not mandatory.
     return 0;
 }
