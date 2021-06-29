@@ -82,11 +82,11 @@ int main()
     //  signed char         1               used for characters (guaranteed range -127 to 127)
     //  unsigned char       1               used for characters (range 0 to 255)
 
-    long b = 4523232;
-    long int c = 2345342;
-    long double d = 233434.56343;
-    short e = 3434233; // Compiler warning: truncation from 'int' to 'short'
-    unsigned int a = -5; // No compiler message... can only store positive numbers or 0. Becomes 4294967291
+    long long_val = 4523232;
+    long int long_int_val = 2345342;
+    long double long_double_val = 233434.56343;
+    short short_val = 3434233; // Compiler warning: truncation from 'int' to 'short'
+    unsigned int unsigned_int_val = -5; // No compiler message... can only store positive numbers or 0. Becomes 4294967291
 
     // Derived Data Types are derived from fundamental data types.
     // Some examples are arrays, pointers, function types, and structures.
@@ -160,6 +160,88 @@ int main()
     std::cout << "num_int_6 = " << num_int_6 << std::endl;
 
     
+    // Operators
+    // https://www.programiz.com/cpp-programming/operators
+
+    // Arithmetic Operators
+    int a, b;
+    a = 7;
+    b = 2;
+    std::cout << "a + b = " << (a + b) << std::endl; // printing the sum of a and b
+    std::cout << "a - b = " << (a - b) << std::endl; // printing the difference of a and b
+    std::cout << "a * b = " << (a * b) << std::endl; // printing the product of a and b
+    std::cout << "a / b = " << (a / b) << std::endl; // printing the division of a by b
+    std::cout << "a % b = " << (a % b) << std::endl; // printing the modulo of a by b
+
+    // Increment and Decrement
+    int result_a, result_b;
+    result_a = ++a; // incrementing a by 1 and storing the result in result_a
+    std::cout << "result_a = " << result_a << std::endl;
+    result_b = --b; // decrementing b by 1 and storing the result in result_b
+    std::cout << "result_b = " << result_b << std::endl;
+    // Above the '++' and '--' operators are used as prefixes (++a and --b);
+    // however, these operators can also be used as postfixes (a++ and b--).
+
+    // Assignment Operators:
+    //  Operator    Example     Equivalent to
+    //  -------------------------------------
+    //  =           a = b;      a = b;
+    //  +=          a += b;     a = a + b;
+    //  -=          a -= b;     a = a - b;
+    //  *=          a *= b;     a = a * b;
+    //  /=          a /= b;     a = a / b;
+    //  %=          a %= b;     a = a % b;
+
+    // Relational Operators:
+    // If the relation is true, 1 is returned. If the relation is false, 0 is returned.
+    //  Operator    Meaning                     Example
+    //  -------------------------------------------------------------------
+    //  ==          Is Equal To                 3 == 5  | returns false (0)
+    //  !=          Not Equal To                3 != 5  | returns true  (1)
+    //  >           Greater Than                3 > 5   | returns false (0)
+    //  <           Less Than                   3 < 5   | returns true  (1)
+    //  >=          Greater Than or Equal To    3 >= 5  | returns false (0)
+    //  <=          Less Than or Equal To       3 <= 5  | returns true  (1)
+
+    // Logical Operators
+    bool result;
+
+    result = (3 != 5) && (3 < 5); // true 1
+    std::cout << "(3 != 5) && (3 < 5) is " << result << std::endl;
+
+    result = (3 == 5) && (3 < 5); // false 0
+    std::cout << "(3 == 5) && (3 < 5) is " << result << std::endl;
+
+    result = (3 == 5) && (3 > 5); // false 0
+    std::cout << "(3 == 5) && (3 > 5) is " << result << std::endl;
+
+    result = (3 != 5) || (3 < 5); // true 1
+    std::cout << "(3 != 5) || (3 < 5) is " << result << std::endl;
+
+    result = (3 != 5) || (3 > 5); // true 1
+    std::cout << "(3 != 5) || (3 > 5) is " << result << std::endl;
+
+    result = (3 == 5) || (3 > 5); // false 0
+    std::cout << "(3 == 5) || (3 > 5) is " << result << std::endl;
+
+    result = !(5 == 2); // true 1
+    std::cout << "!(5 == 2) is " << result << std::endl;
+
+    result = !(5 == 5); // false 0
+    std::cout << "!(5 == 5) is " << result << std::endl;
+
+    // Bitwise Operators:
+    // Used to perform operations on individual bits and can only be used alongside char and int data types.
+    //  Operator    Description
+    //  -----------------------------------
+    //  &           Binary AND
+    //  |           Binary OR
+    //  ^           Binary XOR
+    //  ~           Binary One's Complement
+    //  <<          Binary Shift Left
+    //  >>          Binary Shift Right
+
+
     // The "exit status" of the main() function. The program ends with this statement; however, this statement is not mandatory.
     return 0;
 }
